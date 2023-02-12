@@ -1,0 +1,67 @@
+body {
+    font-family: 'Gentium Book Plus', serif;
+    margin: 0 auto;
+}
+main {
+    margin-top: 64px;
+}
+section .list-group-item {
+    background-color: inherit;
+}
+section .card-header {
+    font-weight: bold;
+    letter-spacing: .05rem;
+}
+.skills .row {
+    padding: 0 10px 10px 10px;
+}
+.skill::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.skills .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.25%;
+    width: 24%;
+    border: 1px solid #dee2e6;
+    background-color: #dee2e6;
+    box-shadow: 0px 1px 2px black;
+    border-radius: 20px;
+    transition: all 0.4s ease;  
+}
+.skills .card:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .skills .card {
+        width: 49%;
+        margin: 0.5%;
+    }
+    .skills .card:hover {
+        background-color: #dee2e6;
+        cursor: auto;
+    }
+}
+@media (max-width: 480px) {
+    .skills .card {
+        width: 99%;
+        margin: 1%;
+    }
+    .skills .card:hover {
+        background-color: #dee2e6;
+        cursor: auto;
+    }
+}
+.contact a {
+    text-decoration: none; 
+    color: inherit;
+    transition: all 0.4s ease;  
+}
+.contact a:hover {
+    color: rgb(120, 120, 120);
+}
